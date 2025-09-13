@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #8b5a2b;
+  --secondary: #d4af37;
+  --accent: #c89b7b;
+  --dark: #1a120b;
+  --light: #f8f5f0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  background-color: var(--light);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-login {
+  background: transparent;
+  color: white;
+  border: 1px solid var(--secondary);
+  margin-right: 15px;
+}
+
+.btn-quote {
+  background: var(--secondary);
+  color: var(--dark);
+}
+
+.btn-login:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.btn-quote:hover {
+  background: #e6c44f;
+  transform: translateY(-2px);
+}
+
+.btn-hero {
+  background: var(--secondary);
+  color: var(--dark);
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: #e6c44f;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: var(--dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--dark);
+  border: 2px solid var(--dark);
+}
+
+.btn-primary:hover {
+  background: #e6c44f;
+  transform: translateY(-2px);
+}
+
+.btn-outline:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--dark);
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--secondary);
+}
+
+.section-subtitle {
+  color: #666;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

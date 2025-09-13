@@ -1,0 +1,67 @@
+/* Header & Navigation */
+header {
+  background-color: rgba(26, 18, 11, 0.95);
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+}
+
+.logo i {
+  margin-right: 10px;
+  color: var(--secondary);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover:after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: var(--secondary);
+}
