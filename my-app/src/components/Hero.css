@@ -1,9 +1,6 @@
 /* Hero Section */
 .hero {
   padding: 160px 0 100px;
-  background: linear-gradient(rgba(26, 18, 11, 0.7), rgba(26, 18, 11, 0.7)), url('../images/hero-bg.jpeg');
-  background-size: cover;
-  background-position: center;
   color: white;
   text-align: center;
   min-height: 100vh;
